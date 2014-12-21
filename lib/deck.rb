@@ -51,6 +51,6 @@ class Deck
 
   # Returns an array of cards to the bottom of the deck.
   def return(cards)
-    cards.each { |card| @cards << card }
+    @cards.concat(cards)
   end
 end
